@@ -1,0 +1,35 @@
+<p>product works from product component!</p>
+
+<article>
+  <div class="productName">{{productName}}</div>
+</article>
+
+<input type="text" [(ngModel)]="productName"  />
+<button (click)="addProduct() ">Change</button>
+
+
+
+
+<app-product  *ngFor="let product of products" [productName]="product"></app-product>
+
+
+  <!-- <div>
+
+    <button (click)="startCountdown()">Get Download Link</button>
+    <div class="spinner-container" *ngIf="countdown <= 9">
+      <mat-progress-spinner [value]="100 - (((countdown + 1) / 10) * 100)" mode="determinate"></mat-progress-spinner>
+      <div class="spinner-value">{{ countdown }}</div>
+    </div>
+  </div>
+  <a *ngIf="showDownloadLink" href="path_to_your_download_file">Download Link</a>
+</div>
+ -->
+
+<!-- <mat-progress-spinner mode="determinate" value=25>
+</mat-progress-spinner>
+<mat-progress-spinner mode="determinate" value=50>
+</mat-progress-spinner>
+<mat-progress-spinner mode="determinate" value=75>
+</mat-progress-spinner>
+<mat-progress-spinner mode="determinate" value=100>
+</mat-progress-spinner> -->
